@@ -1,6 +1,26 @@
 # DevPulse 🚀
 
-A lightweight CLI-based tool that tracks your local coding activity and automatically generates human-readable daily "Done-Lists" or "Dev Logs" using Cloud AI APIs (Groq/OpenAI) to save local disk space.
+<div align="center">
+
+[![Python Version](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)](https://github.com/naidrahiqa/Context-Aware-Dev-Log-Automator)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/naidrahiqa/Context-Aware-Dev-Log-Automator/pulls)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+**AI-Powered Development Activity Tracker**
+
+_Never write daily dev logs manually again. Let AI do it for you._
+
+[Features](#-features) • [Quick Start](#-installation) • [Documentation](#-documentation) • [Examples](#-example-output)
+
+</div>
+
+---
+
+## 🎯 What is DevPulse?
+
+A lightweight CLI-based background tool that tracks your local coding activity and automatically generates human-readable daily "Done-Lists" or "Dev Logs" using Cloud AI APIs (Gemini/Groq/OpenAI) to save local disk space.
 
 ## ✨ Features
 
