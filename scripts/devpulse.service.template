@@ -1,0 +1,28 @@
+[Unit]
+Description=DevPulse - Automated Dev Log Tracker
+After=network.target
+
+[Service]
+Type=simple
+User=%USERNAME%
+WorkingDirectory=%WORKDIR%
+
+# Environment variables
+Environment="DEVPULSE_API_KEY=%API_KEY%"
+Environment="DEVPULSE_AI_PROVIDER=%PROVIDER%"
+Environment="DEVPULSE_PRIVACY_MODE=%PRIVACY_MODE%"
+
+# Path to DevPulse executable
+ExecStart=%DEVPULSE_PATH% start --daemon
+
+# Restart policy
+Restart=always
+RestartSec=10
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=devpulse
+
+[Install]
+WantedBy=multi-user.target

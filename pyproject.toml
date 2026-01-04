@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "devpulse"
+version = "1.0.0"
+description = "A lightweight CLI tool that tracks coding activity and generates AI-powered daily dev logs"
+readme = "README.md"
+authors = [
+    { name = "Your Name", email = "your.email@example.com" }
+]
+license = { text = "MIT" }
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+keywords = ["devlog", "development", "tracking", "ai", "cli"]
+
+dependencies = [
+    "click>=8.1.7",
+    "watchdog>=3.0.0",
+    "groq>=0.4.0",
+    "openai>=1.12.0",
+    "litellm>=1.30.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.5.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/devpulse"
+Repository = "https://github.com/yourusername/devpulse"
+"Bug Tracker" = "https://github.com/yourusername/devpulse/issues"
+
+[project.scripts]
+devpulse = "devpulse.cli:main"
+
+[tool.setuptools]
+packages = ["devpulse"]
+
+[tool.black]
+line-length = 100
+target-version = ['py39']
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
